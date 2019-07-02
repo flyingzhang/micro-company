@@ -3,13 +3,11 @@ package com.idugalic.queryside.project.handler;
 import com.idugalic.common.project.event.ProjectCreatedEvent;
 import com.idugalic.queryside.project.domain.Project;
 import com.idugalic.queryside.project.repository.ProjectRepository;
-
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
-import org.axonframework.eventsourcing.SequenceNumber;
+import org.axonframework.eventhandling.SequenceNumber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

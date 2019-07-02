@@ -7,7 +7,8 @@ import com.idugalic.queryside.blog.repository.BlogPostRepository;
 
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
-import org.axonframework.eventsourcing.SequenceNumber;
+
+import org.axonframework.eventhandling.SequenceNumber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

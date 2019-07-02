@@ -6,18 +6,17 @@ import com.idugalic.commandside.blog.command.PublishBlogPostCommand;
 import com.idugalic.common.blog.event.BlogPostCreatedEvent;
 import com.idugalic.common.blog.event.BlogPostPublishedEvent;
 import com.idugalic.common.blog.model.BlogPostCategory;
-
-import java.util.Date;
-
 import org.axonframework.commandhandling.CommandHandler;
-import org.axonframework.commandhandling.model.AggregateIdentifier;
 import org.axonframework.eventsourcing.EventSourcingHandler;
+import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.spring.stereotype.Aggregate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.axonframework.commandhandling.model.AggregateLifecycle.apply;
+import java.util.Date;
 
+
+import static org.axonframework.modelling.command.AggregateLifecycle.apply;
 /**
  * A BlogPost aggregate root.
  * 

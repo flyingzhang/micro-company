@@ -8,7 +8,7 @@ import java.util.UUID;
 
 import javax.validation.constraints.NotNull;
 
-import org.axonframework.commandhandling.TargetAggregateIdentifier;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
 import org.hibernate.validator.constraints.NotBlank;
 
 /**
@@ -18,6 +18,7 @@ import org.hibernate.validator.constraints.NotBlank;
  *
  */
 public class CreateProjectCommand extends AuditableAbstractCommand {
+
 
     @TargetAggregateIdentifier
     private String id;

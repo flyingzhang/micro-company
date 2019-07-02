@@ -135,6 +135,12 @@
 	<!-- Remove for release -->
 	<repositories>
 		<repository>
+			<id>nexus-aliyun</id>
+			<name>Nexus aliyun</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+
+		<repository>
 			<id>spring-release</id>
 			<snapshots>
 				<enabled>false</enabled>

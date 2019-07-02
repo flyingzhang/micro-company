@@ -21,7 +21,7 @@ public class AxonConfiguration {
     
     @Bean
     CommandBus commandBus(TransactionManager transactionManager) {
-        SimpleCommandBus commandBus = new SimpleCommandBus(transactionManager, NoOpMessageMonitor.INSTANCE);
+        SimpleCommandBus commandBus = SimpleCommandBus.builder().transactionManager(transactionManager).messageMonitor(NoOpMessageMonitor.INSTANCE).build();
         commandBus.registerDispatchInterceptor(new BeanValidationInterceptor());
         return commandBus;
     }

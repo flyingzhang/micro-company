@@ -3,8 +3,8 @@ package com.idugalic;
 import com.idugalic.commandside.blog.aggregate.exception.PublishBlogPostException;
 
 import org.axonframework.commandhandling.CommandExecutionException;
-import org.axonframework.commandhandling.model.ConcurrencyException;
 import org.axonframework.messaging.interceptors.JSR303ViolationException;
+import org.axonframework.modelling.command.ConcurrencyException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

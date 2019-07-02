@@ -5,7 +5,7 @@ import com.idugalic.common.model.AuditEntry;
 
 import javax.validation.constraints.NotNull;
 
-import org.axonframework.commandhandling.TargetAggregateIdentifier;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
 import org.hibernate.validator.constraints.NotBlank;
 
 /**
