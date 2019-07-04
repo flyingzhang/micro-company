@@ -57,6 +57,7 @@ public class RestConfiguration extends RepositoryRestMvcConfiguration {
     static class RestConfigurationExposeId extends RepositoryRestConfigurerAdapter {
         @Override
         public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+
             config.exposeIdsFor(BlogPost.class, Project.class);
             config.setBasePath("/api");
         }
