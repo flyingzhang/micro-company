@@ -49,3 +49,13 @@ spring:
         key-store-path: classpath:mongo-tm-trust-store.jks
         key-store-password: 5tep0ver
         key-password: 5tep0ver
+
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+
+axon:
+  eventsourcing:
+    storage: mongo
+
